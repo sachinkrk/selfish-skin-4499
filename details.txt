@@ -1,1 +1,5 @@
 git project project
+
+day-1 task : create a repo and collab with ur ia 
+
+day-2 task : create a responsive navbar with hamburger icon
