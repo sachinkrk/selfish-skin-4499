@@ -1,0 +1,148 @@
+*{
+    padding: 0px; 
+    margin: 0px;
+    font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji; 
+  }
+  .sign_up{
+      border: 0px solid teal;
+      display: flex;
+      margin: 40px auto;
+      justify-content: center;
+      align-items: center;
+  }
+  .sign_up >div{
+      border: 0px solid teal;
+      width: 50%;
+  }
+  #sform{
+      border: 0px solid teal;
+      text-align: center;
+  }
+  #sform >h1{
+      color: #1a2e44;
+  }
+  /* #lform >div{
+      border: 0px solid teal;
+      box-sizing: border-box;
+  } */
+  /* #limage{
+      border: 1px solid teal;
+  } */
+  #simage >img{
+      border: 0px solid teal;
+      height: 100%;
+      width: 80%;
+      display: block;
+      margin: 0px auto;
+  }
+  #simage >div{
+      border: 0px solid teal;
+  }
+  #simage >div >h4{
+      border: 0px solid teal;
+      font-size: 20px;
+      text-align: center;
+  }
+  .sign_button{
+      display: block;
+      width: 300px;
+      margin: 30px auto;
+      padding: 20px 40px;
+      box-sizing: border-box;
+      background-color: white;
+      border: 1px solid #34608f;
+      color: #1a2e44;
+      border-radius: 10px;
+  }
+  #sform >div >button:hover{
+      cursor: pointer;
+      background-color: #34608f;
+      color: white;
+  }
+  #addAcc{
+      margin-top: -90px;
+      margin-bottom: 40px;
+      background-color: #22d172;
+      color: white;
+      border: none;
+  }
+  #addAcc:hover{
+      background-color: #31f388;
+      cursor: pointer;
+  }
+  #addAcc +p,#addAcc +p +p{
+      border: 0px solid teal;
+      width: 360px;
+      margin: auto;
+  }
+  .hide{
+      visibility: hidden;
+      border: 0px solid;
+      width: 300px;
+      margin: auto;
+      box-sizing: border-box;
+  }
+  .hide >input,.hide >button{
+      display: block;
+      padding: 5px;
+      margin: 10px auto;
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid #1a2e44;
+  }
+
+  /* css footer start from here */
+
+  footer {
+    border: 0px solid red;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul>h3 {
+    font-size: 20px;
+    color: #1a2e44;
+    margin-bottom: 20px;
+}
+
+footer ul>li {
+    text-decoration: none;
+    border: 0px solid teal;
+    color: #1a2e44;
+    display: flex;
+    margin: 10px 0px;
+}
+
+footer ul>li:hover {
+    color: #53b275;
+    cursor: pointer;
+}
+
+footer ul>li>img {
+    border: 0px solid green;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    margin: 10px 5px 50px 5px;
+    cursor: pointer;
+}
+
+footer ul>li>img:hover {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    height: 52px;
+    width: 52px;
+}
+
+@media (max-width: 800px) {
+    footer {
+        display: inline;
+    }
+
+    footer>div {
+        border: 0px solid;
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+
+}

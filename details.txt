@@ -1,6 +1,6 @@
 git project project
 
-day-1 task : create a repo and collab with ur ia 
+day-1 task : create a repo and collab with ur ia  
 
 day-2 task : create navbar 
 
@@ -8,4 +8,8 @@ day-3 task : create a login page and sign_up page
 
 day-4 task : create pricing and API page
 
+<<<<<<< HEAD
 day-5 task : creat index/main/landing page
+=======
+day-5 task : creat index/main/landing page
+>>>>>>> 28a774c1cebdfe36c19d071565b023b875a107cc
