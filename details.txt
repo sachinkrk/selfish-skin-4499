@@ -7,3 +7,5 @@ day-2 task : create navbar
 day-3 task : create a login page and sign_up page
 
 day-4 task : create pricing and API page
+
+day-5 task : creat index/main/landing page
