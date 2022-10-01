@@ -5,10 +5,15 @@
     font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 nav{
+    position: -webkit-sticky; /* Safari */
     position: sticky;
+    top: 0;
 }
 nav >a{
     text-decoration: none;
+}
+nav >a >div >span{
+    text-decoration: underline;
 }
 nav >a >div{
     border: 0px solid;
@@ -30,12 +35,11 @@ nav >a >div{
     margin: 10px 5px;
     border-radius: 10px;
     cursor: pointer;
-    color: white;
     background-color: #22d172;
     text-align: center;
 }
 #nav {
-    border: 1px solid;
+    border: 0px solid;
     padding: 0px 50px;
     display: flex;
     justify-content: space-between;
@@ -48,13 +52,16 @@ nav >a >div{
     align-items: center;
     list-style: none;
 }
+#nav .mainMenu p{
+   font-size: 5px; 
+}
 #nav .mainMenu div a {
     display: flex;
     align-items: center;
     padding: 15px;
     text-decoration: none ;
     text-transform: uppercase;
-    color: black;
+    color: #1a2e44;
     font-size: 1rem;
 }
 #nav .openMenu {
@@ -78,6 +85,71 @@ nav >a >div{
     display: flex;
     align-items: center;
 }
+
+  .custom-select {
+    position: relative;
+    font-family: Arial;
+    
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    color: #1a2e44;
+    border-radius: 10px;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #1a2e44;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: whitesmoke;
+    border-radius: 10px;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+
 @media (max-width: 800px) {
     #nav .mainMenu{
         height: 100vh;
@@ -104,6 +176,7 @@ nav >a >div{
         padding: 0px 8px;
         border-radius: 5px;
         border: 0px solid red;
+        /* color: #fff; */
         background-color: #1a2e44;
     }
     #nav .openMenu i{
@@ -139,4 +212,18 @@ nav >a >div{
         padding: 0px;
         margin: 0px;
     }
+
+    .select-selected {
+        color: white;
+        border-radius: 10px;
+    }
+      
+    .select-selected:hover{
+        background-color: white;
+        color: #1a2e44; 
+    }
 }
+
+/* drag drop css start from here */
+
+/*the container must be positioned relative:*/
