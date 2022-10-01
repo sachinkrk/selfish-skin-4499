@@ -1,0 +1,224 @@
+.part1 {
+    display: flex;
+    margin: 50px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.part1>div {
+    border: 0px solid teal;
+    width: 50%;
+}
+
+.part1>div>img {
+    display: block;
+    border: 0px solid teal;
+    width: 80%;
+    margin: auto;
+}
+
+.part1>div>h1 {
+    border: 0px solid teal;
+    width: 90%;
+    margin: 30px 0px;
+    font-size: 50px;
+}
+
+.part1>div>p {
+    border: 0px solid teal;
+    width: 70%;
+    font-size: 20px;
+    line-height: 50px;
+    margin: 30px 0px;
+}
+
+.part1>div>button {
+    padding: 20px;
+    font-size: 18px;
+    background-color: #22d172;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.part1>div>button:hover {
+    background-color: #31f388;
+}
+
+.part1>div>button>a {
+    text-decoration: none;
+    color: white;
+}
+
+.part2 {
+    margin: 0px 10%;
+    border: 0px solid;
+}
+
+.part2>h1 {
+    color: #1a2e44;
+    text-align: center;
+}
+
+.part21 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1a2e44;
+}
+
+.part21:nth-child(even) {
+    flex-direction: row-reverse;
+    background-color: whitesmoke;
+}
+
+.part21>div {
+    border: 0px solid;
+    width: 50%;
+}
+
+.part3>h1 {
+    text-align: center;
+}
+
+.part31 {
+    border: 0px solid red;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 25px;
+}
+.part31>div {
+    border: 0px solid red;
+    padding: 0px 5px;
+    border-radius: 60px 25px;
+    box-shadow: #7ef0b1 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, #31f388 0px -2px 6px 0px inset;
+}
+.testimonial {
+    border: px solid;
+    display: flex;
+    justify-content: space-between;
+}
+.part4{
+    border: 0px solid;
+    width: 80%;
+    margin: 60px auto;
+}
+.part4 >h1{
+    border: 0px solid;
+    text-align: center;
+}
+.part41{
+    border: 0px solid red;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,auto);
+    gap: 20px;
+}
+.part41 >div{
+    border: 0px solid;
+    padding: 0px 20px 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+}
+.part5{
+    border: 1px solid;
+    text-align: center;
+    padding: 100px;
+    background-image: url('./icon&image/jellyfish-g2601c7b9c_1920.jpg');
+    color: white;
+}
+.part5 >div{
+    display: inline;
+    border: 1px solid;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #22d172;
+    cursor: pointer;
+}
+.part5 >div:hover{
+    background-color: #31f388;
+}
+
+footer {
+    border: 0px solid red;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul>h3 {
+    font-size: 20px;
+    color: #1a2e44;
+    margin-bottom: 20px;
+}
+
+footer ul>li {
+    text-decoration: none;
+    border: 0px solid teal;
+    color: #1a2e44;
+    display: flex;
+    margin: 10px 0px;
+}
+
+footer ul>li:hover {
+    color: #53b275;
+    cursor: pointer;
+}
+
+footer ul>li>img {
+    border: 0px solid green;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    margin: 10px 5px 50px 5px;
+    cursor: pointer;
+}
+
+footer ul>li>img:hover {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    height: 52px;
+    width: 52px;
+}
+
+@media (max-width: 800px) {
+
+    .part1,
+    .part1>div>img {
+        display: inline;
+    }
+
+    .part1>div {
+        width: 100%;
+        margin: 0px 10%;
+    }
+
+    .part21 {
+        display: block;
+    }
+
+    .part21>div {
+        width: 100%;
+    }
+    .part31{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .part41{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,auto);
+    }
+
+    footer {
+        display: inline;
+    }
+
+    footer>div {
+        border: 0px solid;
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+}
