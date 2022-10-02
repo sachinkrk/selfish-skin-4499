@@ -59,12 +59,12 @@
       background-color: #34608f;
       color: white;
   }
-  #login{
+  #log_in{
       background-color: #22d172;
       color: white;
       border: none;
   }
-  #login:hover{
+  #log_in:hover{
       background-color: #31f388;
       cursor: pointer;
   }

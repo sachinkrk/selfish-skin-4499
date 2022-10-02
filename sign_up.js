@@ -1,10 +1,10 @@
-let show = document.querySelector("#addAcc")
-    show.addEventListener("click",showform);
+    let obj_target = document.getElementById("hidden")
+    obj_target.addEventListener("click",showform);
 
     function showform(){
         let form = document.querySelector(".hide");
         form.style.visibility = "visible";
-        show.style.visibility = "hidden";
+        obj_target.style.visibility = "hidden";
 
     }
 

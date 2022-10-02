@@ -59,18 +59,18 @@
       background-color: #34608f;
       color: white;
   }
-  #addAcc{
+  #hidden{
       margin-top: -90px;
       margin-bottom: 40px;
       background-color: #22d172;
       color: white;
       border: none;
   }
-  #addAcc:hover{
+  #hidden:hover{
       background-color: #31f388;
       cursor: pointer;
   }
-  #addAcc +p,#addAcc +p +p{
+  #hidden +p,#hidden +p +p{
       border: 0px solid teal;
       width: 360px;
       margin: auto;
